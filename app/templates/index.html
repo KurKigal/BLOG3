@@ -11,7 +11,7 @@
                 <h1 class="hero-title">Düşüncelerinizi paylaşın</h1>
                 <p class="hero-subtitle">Yazın, okuyun ve ilham veren fikirleri keşfedin.</p>
                 {% if not current_user.is_authenticated %}
-                <a href="{{ url_for('register') }}" class="btn btn-hero">Yazmaya Başla</a>
+                <a href="{{ url_for('register') }}" class="btn btn-write btn-hero">Yazmaya Başla</a>
                 {% endif %}
             </section>
             {% endif %}
@@ -123,22 +123,22 @@
                             {{ category.name }}
                             <span>{{ category.posts.count() }}</span>
                         </a>
-                {% else %}
-                <p class="sidebar-empty">Henüz kategori yok</p>
-                {% endfor %}
+                    {% else %}
+                    <p class="sidebar-empty">Henüz kategori yok</p>
+                    {% endfor %}
+                </div>
             </div>
-        </div>
+
             <!-- Popüler Yazarlar -->
             <div class="sidebar-section">
-                <h3 class="sidebar-title">Popüler Yazılar</h3>
+                <h3 class="sidebar-title">Popüler Yazarlar</h3>
                 <div class="popular-posts">
                     {% for post in posts.items[:3] %}
                     <a href="{{ url_for('post_detail', post_id=post.id) }}" class="popular-post">
-                        <span class="popular-rank">{{ loop.index }}</span>
+                        <span class="popular-rank">{{ post.author.username[0].upper()}}</span>
                         <div class="popular-info">
-                            <span class="popular-title">{{ post.title[:50] }}{% if post.title|length > 50 %}...{% endif
-                                %}</span>
-                            <span class="popular-author">{{ post.author.username }}</span>
+                            <span class="popular-title">{{ post.author.username }}</span>
+                            <span class="popular-author"> {{ post.author.posts.count() }} Yazı</span>
                         </div>
                     </a>
                     {% endfor %}

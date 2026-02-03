@@ -1,14 +1,14 @@
 
 /* CSS Variables */
 :root {
-    --primary-color: #1a8917;
-    --primary-hover: #156d12;
+    --primary-color: #691789;
+    --primary-hover: #55126d;
     --text-primary: #242424;
     --text-secondary: #6b6b6b;
     --text-muted: #757575;
     --bg-primary: #ffffff;
     --bg-secondary: #f9f9f9;
-    --bg-tertiary: #f2f2f2;
+    --bg-tertiary: #b8b8b8;
     --border-color: #e6e6e6;
     --border-light: #f2f2f2;
     --error-color: #c94a4a;
@@ -92,7 +92,8 @@ img {
 }
 
 .logo-icon {
-    font-size: 1.5rem;
+    width: 32px;
+    height: 32px;
 }
 
 .logo-text {
@@ -249,7 +250,7 @@ img {
     padding: 8px 16px;
     font-size: 0.875rem;
     font-weight: 500;
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-md);
     border: none;
     cursor: pointer;
     transition: var(--transition);
@@ -305,7 +306,8 @@ img {
 
 .btn-hero {
     padding: 12px 32px;
-    font-size: 1rem;
+    font-size: .9rem;
+    width: max-content;
 }
 
 .btn-link {
@@ -412,7 +414,7 @@ img {
     margin-bottom: 20px;
     height: 350px;
     border-bottom: 1px solid var(--border-color);
-    background-image: url('/static/img/banner.png');
+    background-image: url('/static/img/banner-1.png');
     background-size: cover;
     border-radius: var(--radius-md);
     background-position: center;
@@ -435,8 +437,8 @@ img {
 /* Content Wrapper */
 .content-wrapper {
     display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 64px;
+    grid-template-columns: 1fr 380px;
+    gap: 30px;
     padding: 48px 0;
     align-items: start;
 }
@@ -445,13 +447,68 @@ img {
     width: 100%;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
+    .content-wrapper {
+        grid-template-columns: 1fr 320px;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    .posts-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        width: 95%;
+        padding: 0 12px;
+    }
+    
     .content-wrapper {
         grid-template-columns: 1fr;
+        padding: 24px 0;
+        gap: 24px;
     }
 
     .sidebar {
-        display: none;
+        position: static;
+        top: auto;
+        order: 2;
+        margin-top: 32px;
+    }
+    
+    .main-content-area {
+        order: 1;
+    }
+    
+    
+    .hero {
+        padding: 20px 24px;
+        height: auto;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: .9rem;
+    }
+    
+    .post-card {
+        padding: 16px;
+    }
+    
+    .sidebar-title {
+        font-size: 1rem;
+    }
+    
+    .pill {
+        padding: 10px 12px;
+        font-size: 0.8125rem;
     }
 }
 
@@ -743,6 +800,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-left: 7px;
 }
 
 .popular-post {
@@ -756,6 +814,14 @@ img {
     font-weight: 700;
     color: var(--bg-tertiary);
     line-height: 1;
+    background-color: #a26db659;
+    color: var(--primary-color);
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .popular-info {
@@ -1425,6 +1491,9 @@ img {
    RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
+    .posts-list {
+        grid-template-columns: 1fr;
+    }
     .nav-container {
         flex-wrap: wrap;
     }
@@ -1436,17 +1505,7 @@ img {
         margin-top: 12px;
     }
 
-    .hero {
-        padding: 48px 0;
-    }
 
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-    }
 
     .content-wrapper {
         padding: 32px 0;
