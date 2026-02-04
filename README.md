@@ -4,21 +4,21 @@
 
 ## 📋 İçindekiler
 
-- [Proje Hakkında](https://www.google.com/search?q=%23-proje-hakk%C4%B1nda)
+- [Proje Hakkında]
     
-- [Özellikler](https://www.google.com/search?q=%23-%C3%B6zellikler)
+- [Özellikler]
     
-- [Teknoloji Yığını](https://www.google.com/search?q=%23-teknoloji-y%C4%B1%C4%9F%C4%B1n%C4%B1)
+- [Teknoloji Yığını]
     
-- [Sistem Mimarisi ve Akış](https://www.google.com/search?q=%23-sistem-mimarisi-ve-ak%C4%B1%C5%9F)
+- [Sistem Mimarisi ve Akış]
     
-- [Kurulum ve Çalıştırma](https://www.google.com/search?q=%23-kurulum-ve-%C3%A7al%C4%B1%C5%9Ft%C4%B1rma)
+- [Kurulum ve Çalıştırma]
     
-- [Proje Yapısı](https://www.google.com/search?q=%23-proje-yap%C4%B1s%C4%B1)
+- [Proje Yapısı]
     
-- [Ekran Görüntüleri](https://www.google.com/search?q=%23-ekran-g%C3%B6r%C3%BCnt%C3%BCleri)
+- [Ekran Görüntüleri]
     
-- [Ekip](https://www.google.com/search?q=%23-ekip)
+- [Ekip]
     
 
 ---
@@ -145,7 +145,7 @@ Projemiz **Factory Pattern** yapısına uygun olarak modüler bir şekilde tasar
 
 ### 1. Ana Sayfa
 
-<img width="1857" height="983" alt="ana sayfa" src="https://github.com/user-attachments/assets/993316c2-138c-413f-9914-b63f65fa3d43" />
+![Uploading Screenshot 2026-02-04 at 11.57.41.png…]()
 
 
 ### 2. Yazı Oluşturma Paneli
