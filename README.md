@@ -74,7 +74,6 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
 1. **Repoyu Klonlayın:**
     
-    Bash
     
     ```Bash
     git clone https://github.com/KullaniciAdiniz/BLOG3.git
